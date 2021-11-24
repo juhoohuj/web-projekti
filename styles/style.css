@@ -1,1 +1,42 @@
 /* web-projekti*/
+body { 
+    display: grid;
+    grid-template-areas: 
+      "nav header header"
+      "nav article article"
+      "nav article article"
+      "nav footer footer";
+    grid-template-rows: 80px 1fr 1fr;  
+    grid-template-columns: 10% 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+    }  
+  header, footer, article, nav, div {
+    padding: 1.2em;
+    background: yellowgreen;
+    border: solid black 1px;
+    }
+  #pageHeader {
+    grid-area: header;
+    border: solid black 1px;
+
+    }
+  #pageFooter {
+    grid-area: footer;
+    border: solid black 1px;
+
+    }
+  #mainArticle { 
+    grid-area: article;    
+    border: solid black 1px;
+  
+    }
+  #mainNav { 
+    grid-area: nav; 
+    border: solid black 1px;
+
+    }
+  

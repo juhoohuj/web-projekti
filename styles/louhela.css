@@ -1,0 +1,15 @@
+h2 { 
+    text-align: center;   
+}
+#questionNumber, h1{
+    text-align: right;
+}
+.progress{
+    margin-top: 25px;
+}
+.alert{
+    font-size: 2em;
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}

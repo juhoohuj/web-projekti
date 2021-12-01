@@ -9,7 +9,7 @@
     <script src="/js/testi.js"></script>
     <link rel="stylesheet" href="/styles/louhela.css">
 </head>
-<body>
+<body onload="start()">
     <header>
        
         
@@ -88,14 +88,14 @@
             <div class="col py-3">
                 <div class="question">
                     <h1> <span id="questionNumber">1</span>/5</h1> 
-                    <h2> 120 + 30 =</h2> 
+                    <h2 id="question"> 120 + 30 =</h2> 
                     
                 </div>
                 <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button" onclick="test()">Vastaus 1</button>
-                    <button class="btn btn-primary" type="button" onclick="test()">Vastaus 2</button>
-                    <button class="btn btn-primary" type="button" onclick="test()">Vastaus 3</button>
-                    <button class="btn btn-primary" type="button" onclick="test()">Vastaus 4</button>
+                    <button id="option1" class="btn btn-primary" type="button" onclick="test()">Vastaus 1</button>
+                    <button id="option2" class="btn btn-primary" type="button" onclick="test()">Vastaus 2</button>
+                    <button id="option3" class="btn btn-primary" type="button" onclick="test()">Vastaus 3</button>
+                    <button id="option4" class="btn btn-primary" type="button" onclick="test()">Vastaus 4</button>
                   </div>
 
 
@@ -103,7 +103,7 @@
                     <div class="progress-bar" id="progress" role="progressbar" style="width: 0%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">0%</div>
              </div>
                 <div class="alert alert-success" role="alert" id="complete">
-                    Vastasit kaikkiin
+                    Tuloksesi: 
               </div>
 
             </div>

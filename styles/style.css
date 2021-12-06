@@ -1,42 +1,46 @@
 /* web-projekti*/
-body { 
-    display: grid;
-    grid-template-areas: 
-      "nav header header"
-      "nav article article"
-      "nav article article"
-      "nav footer footer";
-    grid-template-rows: 80px 1fr 1fr;  
-    grid-template-columns: 10% 1fr 1fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    height: 100vh;
-    margin: 0;
-    padding: 5px;
-    }  
-  header, footer, article, nav, div {
-    padding: 1.2em;
-    background: yellowgreen;
-    border: solid black 1px;
-    }
-  #pageHeader {
-    grid-area: header;
-    border: solid black 1px;
+.navbar {
+  padding: 10px;
+  border: solid black 3px;
+}
 
-    }
-  #pageFooter {
-    grid-area: footer;
-    border: solid black 1px;
+#plus {
+padding: 20px;
+position: relative;
+background-image: url(../images/board-776708_1920.jpg);
+background-size: cover;
+border: orange 5px solid;
+height: 451px;
+}
 
-    }
-  #mainArticle { 
-    grid-area: article;    
-    border: solid black 1px;
-  
-    }
-  #mainNav { 
-    grid-area: nav; 
-    border: solid black 1px;
+#minus {
+background-image: url(../images/miinus.png);
+background-size: cover;
+  border: orange 5px solid;
+  height: 451px;
 
-    }
-  
+}
+
+#kerto {
+  background-image: url(../images/miinus.png);
+  background-size: cover;
+    border: orange 5px solid;
+    height: 451px;
+
+}
+
+#jako {
+  position: relative;
+  background-image: url(../images/divide-2718203_1280.png);
+  background-size: cover;
+    border: orange 5px solid;
+    height: 451px;
+
+
+}
+
+footer {
+  padding: -15px;
+  height: 50px;
+  background-color: darkolivegreen;
+}

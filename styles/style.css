@@ -1,42 +1,71 @@
 /* web-projekti*/
-body { 
-    display: grid;
-    grid-template-areas: 
-      "nav header header"
-      "nav article article"
-      "nav article article"
-      "nav footer footer";
-    grid-template-rows: 80px 1fr 1fr;  
-    grid-template-columns: 10% 1fr 1fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    height: 100vh;
-    margin: 0;
-    padding: 5px;
-    }  
-  header, footer, article, nav, div {
-    padding: 1.2em;
-    background: yellowgreen;
-    border: solid black 1px;
-    }
-  #pageHeader {
-    grid-area: header;
-    border: solid black 1px;
+.navbar {
+  padding: 10px;
+  border: solid black 3px;
+}
 
-    }
-  #pageFooter {
-    grid-area: footer;
-    border: solid black 1px;
+#plus {
+position: relative;
+background-image: url(../images/board-776708_1920.jpg);
+background-size: 100% 100%;
+border: white 1px solid;
+height: 451px;
+text-align: center;
 
-    }
-  #mainArticle { 
-    grid-area: article;    
-    border: solid black 1px;
-  
-    }
-  #mainNav { 
-    grid-area: nav; 
-    border: solid black 1px;
+}
 
-    }
-  
+#minus {
+background-image: url(../images/fibonacci-3210943_1920.jpg);
+background-size: 100% 100%;
+
+  border: white 1px solid;
+  height: 451px;
+  text-align: center;
+
+}
+
+#kerto {
+  background-image: url(../images/pi-1453836_1920.jpg);
+  background-size: 100% 100%;
+
+    border: white 1px solid;
+    height: 451px;
+    text-align: center;
+
+}
+
+#jako {
+  position: relative;
+  background-image: url(../images/mathematics-1509559_1920.jpg);
+  background-size: 100% 100%;
+
+    border: white 1px solid;
+    height: 451px;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.text-block {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#jako:hover .text-block {
+  display: block;
+}
+
+#minus:hover .text-block {
+  display: block;
+}
+#plus:hover .text-block {
+  display: block;
+}
+#kerto:hover .text-block {
+  display: block;
+}

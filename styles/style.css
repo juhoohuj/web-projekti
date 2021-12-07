@@ -1,7 +1,10 @@
 /* web-projekti*/
 .navbar {
   padding: 10px;
+}
 
+.navbar-brand {
+  font-size: 1.5em;
 }
 
 body {
@@ -21,15 +24,15 @@ body {
   font-size: 2em !important;
 }
 .col-1 {
-  border: solid white 1px;
+  border: solid aliceblue 1px;
 }
 /* Tyylit kuvalinkeille */
 #plus {
 position: relative;
 background-image: url(../images/board-776708_1920.jpg);
 background-size: 100% 100%;
-border: white 0.5px solid;
-height: 454px;
+border: aliceblue 0.5px solid;
+height: 450px;
 text-align: center;
 
 }
@@ -38,8 +41,8 @@ text-align: center;
 background-image: url(../images/fibonacci-3210943_1920.jpg);
 background-size: 100% 100%;
 
-  border: white 0.5px solid;
-  height: 454px;
+  border: aliceblue 0.5px solid;
+  height: 450px;
   text-align: center;
 
 }
@@ -48,8 +51,8 @@ background-size: 100% 100%;
   background-image: url(../images/pi-1453836_1920.jpg);
   background-size: 100% 100%;
 
-    border: white 0.5px solid;
-    height: 454px;
+    border: aliceblue 0.5px solid;
+    height: 450px;
     text-align: center;
 
 }
@@ -59,8 +62,8 @@ background-size: 100% 100%;
   background-image: url(../images/mathematics-1509559_1920.jpg);
   background-size: 100% 100%;
 
-    border: white 0.5px solid;
-    height: 454px;
+    border: aliceblue 0.5px solid;
+    height: 450px;
     text-align: center;
     justify-content: center;
 

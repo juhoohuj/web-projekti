@@ -13,6 +13,13 @@ body {
   font-size: 1.5em;
 }
 
+.ms-1:hover {
+  font-size: 2em;
+}
+
+.fs-5 {
+  font-size: 2em !important;
+}
 .col-1 {
   border: solid white 1px;
 }

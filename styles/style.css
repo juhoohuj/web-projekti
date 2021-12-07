@@ -69,3 +69,7 @@ a {
 #kerto:hover .text-block {
   display: block;
 }
+
+footer > div {
+  color: rgb(255, 255, 255);
+}

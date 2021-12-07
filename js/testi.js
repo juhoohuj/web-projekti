@@ -1,5 +1,6 @@
 let progressPercent = 0
 let questionNumber = 1
+let answered = false;
 
 let score = 0
 let first = random(1, 100)
@@ -18,6 +19,7 @@ function random(min, max) {
 }
 
 function start() {
+    answered = false;
     questionNumber = 1
     progressPercent = 0
     score = 0
@@ -35,6 +37,7 @@ function start() {
 }
 
 function check(id) {
+    if(answered == false){
     let answer = document.getElementById(id)
     document.getElementById("next").style.display = "inline"
 
@@ -44,10 +47,13 @@ function check(id) {
     } else {
         answer.classList.toggle('btn-danger');
     }
-
+    answered = true;
+    }
 }
 
 function next() {
+    answered = false;
+
     document.getElementById("next").style.display = "none"
 
     option[0].classList.remove("btn-success")
@@ -73,6 +79,7 @@ function newQuestion() {
         progress.textContent = "100%"
         document.getElementById("result").style.display = "block"
         document.getElementById("result").textContent = "Tuloksesi: " + score
+        answered = true;
     } else {
         first = random(1, 100)
         second = random(1, 100)
@@ -85,15 +92,15 @@ function newQuestion() {
         document.getElementById("questionNumber").textContent = questionNumber
         document.getElementById("question").textContent = first + " + " + second
 
-        // option[0].textContent = random(1, 100)
-        // option[1].textContent = random(1, 100)
-        // option[2].textContent = random(1, 100)
-        // option[3].textContent = random(1, 100)
+        option[0].textContent = random(1, 100)
+        option[1].textContent = random(1, 100)
+        option[2].textContent = random(1, 100)
+        option[3].textContent = random(1, 100)
 
-        option[0].textContent = random(correct -20, correct +20)
-        option[1].textContent = random(correct -20, correct +20)
-        option[2].textContent = random(correct -20, correct +20)
-        option[3].textContent = random(correct -20, correct +20)
+        // option[0].textContent = random(correct -20, correct +20)
+        // option[1].textContent = random(correct -20, correct +20)
+        // option[2].textContent = random(correct -20, correct +20)
+        // option[3].textContent = random(correct -20, correct +20)
 
         option[random(0, 4)].textContent = correct
     }

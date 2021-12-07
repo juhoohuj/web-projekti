@@ -1,15 +1,38 @@
 /* web-projekti*/
 .navbar {
   padding: 10px;
-  border: solid black 3px;
 }
 
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ms-1 {
+  color: aliceblue;
+  font-size: 1.5em;
+}
+
+.ms-1:hover {
+  font-size: 2em;
+}
+
+.fs-5 {
+  font-size: 2em !important;
+}
+.col-1 {
+  border: solid aliceblue 1px;
+}
+/* Tyylit kuvalinkeille */
 #plus {
 position: relative;
 background-image: url(../images/board-776708_1920.jpg);
 background-size: 100% 100%;
-border: white 1px solid;
-height: 451px;
+border: aliceblue 0.5px solid;
+height: 450px;
 text-align: center;
 
 }
@@ -18,8 +41,8 @@ text-align: center;
 background-image: url(../images/fibonacci-3210943_1920.jpg);
 background-size: 100% 100%;
 
-  border: white 1px solid;
-  height: 451px;
+  border: aliceblue 0.5px solid;
+  height: 450px;
   text-align: center;
 
 }
@@ -28,8 +51,8 @@ background-size: 100% 100%;
   background-image: url(../images/pi-1453836_1920.jpg);
   background-size: 100% 100%;
 
-    border: white 1px solid;
-    height: 451px;
+    border: aliceblue 0.5px solid;
+    height: 450px;
     text-align: center;
 
 }
@@ -39,23 +62,26 @@ background-size: 100% 100%;
   background-image: url(../images/mathematics-1509559_1920.jpg);
   background-size: 100% 100%;
 
-    border: white 1px solid;
-    height: 451px;
+    border: aliceblue 0.5px solid;
+    height: 450px;
     text-align: center;
     justify-content: center;
 
 
 }
-
+/* Kuvien tekstien tyyli*/
 .text-block {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 50px;
   display: none;
+  color: black;
 }
+/* Linkkejen tyylit*/
 a {
   text-decoration: none;
   color: black;
 }
+/*hover toiminnot*/
 #jako:hover .text-block {
   display: block;
 }
@@ -68,4 +94,8 @@ a {
 }
 #kerto:hover .text-block {
   display: block;
+}
+
+footer > div {
+  color: rgb(255, 255, 255);
 }

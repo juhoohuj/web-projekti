@@ -10,10 +10,6 @@ body {
   font-size: 1.5em;
 }
 
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .ms-1 {
   color: aliceblue;
   font-size: 1.5em;
@@ -74,7 +70,6 @@ background-size: 100% 100%;
 }
 /* Kuvien tekstien tyyli*/
 .text-block {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 50px;
   display: none;
   color: black;

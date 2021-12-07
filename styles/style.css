@@ -1,4 +1,7 @@
 /* web-projekti*/
+body {
+  font-family: 'Acme', sans-serif;
+}
 .navbar {
   padding: 10px;
 }

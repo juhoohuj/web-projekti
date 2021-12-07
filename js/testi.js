@@ -97,11 +97,6 @@ function newQuestion() {
         option[2].textContent = random(1, 100)
         option[3].textContent = random(1, 100)
 
-        // option[0].textContent = random(correct -20, correct +20)
-        // option[1].textContent = random(correct -20, correct +20)
-        // option[2].textContent = random(correct -20, correct +20)
-        // option[3].textContent = random(correct -20, correct +20)
-
         option[random(0, 4)].textContent = correct
     }
 }

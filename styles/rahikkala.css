@@ -1,14 +1,63 @@
+
 body {
     background-color: gray;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Acme', sans-serif;
+
 }
 
 #kerto {
     text-align: center;
 }
 
-.text-block{
-    font-size: 50px;
-    color: black;
-    display: inline-block;
+.d-grid{
+    align-items: center;
 }
+.text-block{
+    font-size: 80px;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.text-block2 {
+  font-size: 50px;
+  color: aliceblue;
+    text-align: center;
+}
+.ms-1 {
+    color: aliceblue;
+    font-size: 1.5em;
+  }
+  
+  .ms-1:hover {
+    font-size: 2em;
+  }
+
+  .fs-5 {
+    font-size: 2em !important;
+  }
+
+  .btn {
+    background-color:#212429 !important;
+    border: aliceblue 1px solid;
+  }
+  #answers{
+    padding-right: 40px;
+
+  }
+  
+  .form-control {
+    border: 1px black solid;
+  }
+  
+  #tryAgain {
+    display: none;
+  }
+
+  #footerName{
+    color: aliceblue;
+  }
+
+  #buttonCont {
+    padding: 10px;
+  }

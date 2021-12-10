@@ -1,0 +1,33 @@
+/* web-projekti*/
+.navbar {
+    padding: 10px;
+    border: solid black 3px;
+  }
+  
+  #container {
+  position: relative;
+  
+  background-size: 100% 100%;
+  border: white 1px solid;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  
+  }
+  
+  
+  .text-block {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  
+  
+footer > div {
+    color: rgb(255, 255, 255);
+  }

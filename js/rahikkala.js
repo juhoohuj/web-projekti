@@ -1,3 +1,4 @@
+//Muuttujat kysymyksille ja vastausinputeille. Olisi voinut laittaa arrayhyn.
 let question1n1 = rng(1, 10);
 let question1n2 = rng(1, 10);
 let question2n1 = rng(1, 10);
@@ -33,7 +34,8 @@ let buttonAnswers = document.getElementById("rightAnswers");
 let buttonTryAgain = document.getElementById("tryAgain");
 
 buttonAnswers.addEventListener("click", answers);
-
+//Iffillä Katsotaan onko vastaus oikein vai väärin ja lähetetään ilmoitus. Lopussa piilotetaan "Näytä vastaukset" nappi ja näytetään "yritä uudelleen" nappi.
+//Tämän jälkeen haetaan funktiota joka lataa sivun uudelleen painamalla yritä uudelleen nappia.
 let points = 0;
 function answers(){
     points = 0;

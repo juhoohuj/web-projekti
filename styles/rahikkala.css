@@ -1,6 +1,6 @@
 
 body {
-    background-color: gray;
+    background-image: url(../images/tausta.jpg);
     font-family: 'Acme', sans-serif;
 
 }
@@ -16,13 +16,21 @@ body {
     font-size: 80px;
     color: aliceblue;
     text-align: center;
-
+    background-color: #212429;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
 }
 
 .text-block2 {
   font-size: 50px;
   color: aliceblue;
     text-align: center;
+    background-color: #212429;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
 }
 .ms-1 {
     color: aliceblue;
@@ -60,4 +68,15 @@ body {
 
   #buttonCont {
     padding: 10px;
+  }
+
+  .question {
+    color: aliceblue;
+    background-color: #212429;
+     border-radius: 5px;
+  }
+
+  #answercomment {
+    background-color: #212429;
+    border-radius: 5px;
   }

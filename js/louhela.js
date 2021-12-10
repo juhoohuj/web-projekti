@@ -5,7 +5,7 @@ let answered = false;
 let score = 0
 let first = random(1, 100)
 let second = random(1, 100)
-let correct = first + second
+let correct = Math.round(first / second * 100) / 100
 
 let progress = document.getElementById("progress");
 let option = [document.getElementById("option1"),
@@ -18,6 +18,13 @@ function random(min, max) {
     return Math.floor(Math.random() * max) + min;
 }
 
+
+function randomWithDecimal() {
+    let precision = 100;
+    let randomnum = Math.floor(Math.random() * (10 * precision - 1 * precision) + 1 * precision) / (1 * precision);
+    return randomnum
+}
+
 function start() {
     answered = false;
     questionNumber = 1
@@ -26,28 +33,28 @@ function start() {
 
     document.getElementById("result").style.display = "none"
     document.getElementById("restart").style.display = "none"
-    document.getElementById("question").textContent = first + " + " + second
+    document.getElementById("question").textContent = first + " / " + second
 
-    option[0].textContent = random(1, 100)
-    option[1].textContent = random(1, 100)
-    option[2].textContent = random(1, 100)
-    option[3].textContent = random(1, 100)
+    option[0].textContent = randomWithDecimal()
+    option[1].textContent = randomWithDecimal()
+    option[2].textContent = randomWithDecimal()
+    option[3].textContent = randomWithDecimal()
 
     option[random(0, 4)].textContent = correct
 }
 
 function check(id) {
-    if(answered == false){
-    let answer = document.getElementById(id)
-    document.getElementById("next").style.display = "inline"
+    if (answered == false) {
+        let answer = document.getElementById(id)
+        document.getElementById("next").style.display = "inline"
 
-    if (answer.textContent == correct) {
-        answer.classList.toggle('btn-success');
-        score++
-    } else {
-        answer.classList.toggle('btn-danger');
-    }
-    answered = true;
+        if (answer.textContent == correct) {
+            answer.classList.toggle('btn-success');
+            score++
+        } else {
+            answer.classList.toggle('btn-danger');
+        }
+        answered = true;
     }
 }
 
@@ -83,19 +90,19 @@ function newQuestion() {
     } else {
         first = random(1, 100)
         second = random(1, 100)
-        correct = first + second
+        correct = Math.round(first / second * 100) / 100
 
         progressPercent += 20
         questionNumber += 1
         progress.style.width = progressPercent + '%'
         progress.textContent = progressPercent + '%'
         document.getElementById("questionNumber").textContent = questionNumber
-        document.getElementById("question").textContent = first + " + " + second
+        document.getElementById("question").textContent = first + " / " + second
 
-        option[0].textContent = random(1, 100)
-        option[1].textContent = random(1, 100)
-        option[2].textContent = random(1, 100)
-        option[3].textContent = random(1, 100)
+        option[0].textContent = randomWithDecimal()
+        option[1].textContent = randomWithDecimal()
+        option[2].textContent = randomWithDecimal()
+        option[3].textContent = randomWithDecimal()
 
         option[random(0, 4)].textContent = correct
     }

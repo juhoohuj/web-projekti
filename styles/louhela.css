@@ -1,28 +1,61 @@
-h2 { 
-    text-align: center;   
+* {
+    font-family: 'Acme', sans-serif;
+    box-sizing: border-box;
 }
-#questionNumber, h1{
+
+.container {
+    margin-left: 0px;
+}
+
+.headerText {
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+#questionNumber,
+h1 {
     text-align: right;
 }
-.progress{
+
+.progress {
     margin-top: 25px;
 }
-.alert{
+
+.alert {
     font-size: 2em;
     display: none;
     text-align: center;
     margin-top: 20px;
 }
 
-div > h1:nth-last-of-type(1) {
+div>h1:nth-last-of-type(1) {
     text-align: center;
 
 }
-.py-3{ 
+
+.py-3 {
     text-align: center;
 }
 
-#next, #restart{
+footer>div {
+    color: rgb(255, 255, 255);
+}
+
+#next,
+#restart {
     display: none;
     margin-top: 10px;
+}
+
+.nav-item {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+body {
+    background-color: rgba(123, 123, 123, 0.5);
+
 }

@@ -38,6 +38,8 @@ div>h1:nth-last-of-type(1) {
 
 .py-3 {
     text-align: center;
+    background-image: url(../images/tausta.jpg);
+    
 }
 
 footer>div {
@@ -55,7 +57,8 @@ footer>div {
     font-size: 1.2em;
 }
 
-body {
-    background-color: rgba(123, 123, 123, 0.5);
-
-}
+.questionArea{
+    padding: 10px 10px 80px 10px;
+    max-height: 450px;
+    background-color: rgb(185, 185, 185);
+}   

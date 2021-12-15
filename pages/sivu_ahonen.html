@@ -9,70 +9,126 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/ahonen.css">
     <script src="https://kit.fontawesome.com/8d11e7dd84.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     
 
   </head>
   <body>
     <header class="navbar navbar-dark bg-dark">
-      <div class="container-fluid col-auto">
-        <a class="navbar-brand">
-          <img src="../images/pluslaskut.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          Tervetuloa suorittamaan yhteenlaskuharjoitusta, paina "Aloita" kun olet valmis
+      <div class="container-fluid">
+        <a class="navbar-brand text-wrap">
+          <img src="../images/pluslaskut.png" width="30" height="30" class="d-inline-block align-top " alt="">
+        Yhteenlaskutehtävät. paina nappia aloittaaksesi!
         </a>
+        <button class="navbar-toggler d-block d-sm-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsednav" aria-expanded="false" aria-controls="collapsednav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </header>
 
+    <div id="collapsednav" class="collapse bg-dark align-items-center text-center">
+      <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link align-middle px-0">
+            <i class="fs-4 bi-house"></i> <span class="ms-1 d-sm-inline text-white">Koti</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../tietoja.html" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Tietoja</span></a>
+        </li>
+
+        <li>
+          <a href="../sivu_kujala.html" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Vähennyslaskut</span></a>
+        </li>
+
+        <li>
+          <a href="../sivu_rahikkala.html" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Kertolaskut</span></a>
+        </li>
+
+        <li>
+          <a href="../sivu_louhela.html" class="nav-link px-0 align-middle">
+            <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Jakolaskut</span></a>
+        </li>
+
+      </ul>
+    </div>
+
+
+
+
     <!--nav-->
-      <div class="container-fluid ">
+      <div class="container-fluid align-items-center ">
         <div class="row flex-nowrap">
-        <div class="col-auto col-md-1 col-xl-1 px-sm-2 px-0 bg-dark " id="sidebar">
-                  <div class="align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <div class="col-auto col-xl-2 px-0 bg-dark d-none d-md-block" id="sidebar">
+                  <div class="align-items-center align-items-sm-start px-4 pt-3 text-white">
+                    <p href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                       <span class="fs-5 d-none d-sm-inline">Valikko</span>
-                    </a>
+                    </p>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                       <li class="nav-item">
                         <a href="#" class="nav-link align-middle px-0">
-                          <i class="fs-4 bi-house"></i> <span class="ms-1 d-sm-inline">Koti</span>
+                          <i class="fs-4 bi-house"></i> <span class="ms-1 d-sm-inline text-white">Koti</span>
                         </a>
                       </li>
           
                       <li>
                         <a href="../web-projekti/pages/tietoja.html" class="nav-link px-0 align-middle">
-                          <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline">Tietoja</span></a>
+                          <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Tietoja</span></a>
+                      </li>
+                      <li>
+                        <a href="../web-projekti/pages/sivu_kujala.html" class="nav-link px-0 align-middle">
+                          <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Vähennyslaskut</span></a>
+                      </li>
+                      <li>
+                        <a href="../web-projekti/pages/sivu_rahikkala.html" class="nav-link px-0 align-middle">
+                          <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Kertolaskut</span></a>
+                      </li>
+                      <li>
+                        <a href="../web-projekti/pages/sivu_louhela.html" class="nav-link px-0 align-middle">
+                          <i class="fs-4 bi-table"></i> <span class="ms-1 d-sm-inline text-white">Jakolaskut</span></a>
                       </li>
                     </ul>
                   </div>
         </div>
-          <div class="col-11 bg-dark" id="content">
-            <div class="row">
-                <div id="exercises" class="col min-vh-100">
-                  <button id="startbutton"><i class="fas fa-play"></i></button>
-                  <div id="quizcontent" style="display: none;">
-                  <h3 id="mathproblem"></h3>
-                  <input type="number" id="answer">
-                  <button id="check">Tarkista vastaus</button>
-                  <p id="answercheck"></p>
-                  <button id="nextproblem">Seuraava tehtävä</button>
-                  <button id="showresults" style="display: none;">Siirry vastauksiin</button>
+                <div id="exercises" class="container-fluid col">
+                  <div class="container justify-content-center" id="buttondiv">
+                    <button id="startbutton"><i class="fas fa-play"></i></button>
                   </div>
-                  <div id="resultscontent" class="col min-vh-100" style="display: none;">
-                  <ul id="resultsbox"></ul>
+                  <div id="quizcontent" style="display: none;">
+                    <div id="answercontent">
+                      <h3 id="mathproblem"></h3>
+                      <input type="number" id="answer">
+                      <button id="check">Tarkista vastaus</button>
+                      <p id="answercheck">&nbsp</p>
+                      <button id="showresults" style="display: none;">Siirry vastauksiin</button>
+                      </div>
+                      <div id="counter"><p id="quizcounter"></p></div>
+                      <button id="nextproblem">Seuraava tehtävä</button>
+                      <div id="progressbar" class="progress">
+                        <div id="filler" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0/5</div>
+                      </div>
+                      <div id="results" style="display: none;">
+                        <div id="resultscontent" class="col">
+                          <h3 id="result">Tuloksesi</h3>
+                          <ul id="resultsbox"></ul>
+                        </div>
+                      </div>
+                  </div>                  
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        
         </div>
-      </div>
+
         <footer class="bg-dark text-center text-lg-start">
           <div class="text-center p-3">
-            <p class="text-white">© 2021 Copyright: TEKIJÄT??</p>
+            <p class="text-white">© Juho Ahonen <br>
+            OAMK TIK21SP</p>
           </div>
         </footer>
       </div>
-      </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/ahonen.js"></script>
   </body>

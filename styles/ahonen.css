@@ -1,13 +1,8 @@
 body {
     font-family: 'Acme', sans-serif;
-    padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #b1b9c7;
-}
-
-#sidebar {
-    min-height : 80vh;
 }
 
 #resultscontent > h3 {
@@ -27,12 +22,11 @@ ul {
 
 #exercises {
     border: lightcyan 2px solid;
-    border-radius: 5px;
     text-align: center;
     background-image: url(../images/koulutausta.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 a {
@@ -44,7 +38,6 @@ a {
 }
 
 #menu > li > a:hover {
-    
     color: #aeb4ca;
     font-size: 150%;
     transition: all 0.5s;
@@ -62,9 +55,7 @@ header > button {
 }
 
 #sidebar {
-    border-radius: 5px;
     border: solid 2px #edf4ff;
-    margin-right:5px ;
 }
 
 
@@ -73,14 +64,14 @@ header > button {
 }
 
 #startbutton {
-    background-color: #9cb7e6; /* Blue background */
+    background-color: #9cb7e6;
     border-radius: 4px;
     width: 100px;
     max-width: 100%;
-    border: #8793a8 2px solid; /* Remove borders */
-    color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 40px; /* Set a font size */
+    border: #8793a8 2px solid;
+    color: white;
+    padding: 12px 16px; 
+    font-size: 40px;
 }
 
 #buttondiv {
@@ -98,12 +89,9 @@ header > button {
 
 
 footer {
-    margin-top: 5px;
-    border-radius: 5px;
     border: solid 2px #edf4ff;
     height: 80px;
     text-align: center;
-
 }
 
 #quizcontent {
@@ -188,7 +176,6 @@ footer {
       display: inline-block;
       min-width: 150%;
       max-width: 600px;
-      top: 50%;
       position: absolute;
       top: 450px;
       right: -100px;
@@ -210,6 +197,12 @@ footer {
 
     #counter {
         visibility: visible;
+    }
+
+    #resultscontent > ul > li {
+        font-size: 1.1em;
+        padding-top: 10px;
+        margin-right: 30px ;
     }
 } 
 

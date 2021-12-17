@@ -29,6 +29,7 @@ question4.innerHTML = question4n1 + "*" + question4n2;
 question5.innerHTML = question5n1 + "*" + question5n2;
 
 let answerComment = document.getElementById("answerComment");
+let tryAgainText = document.querySelector(".text-block3");
 
 let buttonAnswers = document.getElementById("rightAnswers");
 let buttonTryAgain = document.getElementById("tryAgain");
@@ -39,6 +40,7 @@ buttonAnswers.addEventListener("click", answers);
 let points = 0;
 function answers(){
     points = 0;
+    tryAgainText.style.display = "block";
 if (answer1.value == question1n1 * question1n2) {
 document.getElementById("result").style.color = "green";
 document.getElementById("result").innerHTML = "Oikein meni!";

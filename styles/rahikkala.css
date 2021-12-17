@@ -13,7 +13,7 @@ body {
     align-items: center;
 }
 .text-block{
-    font-size: 80px;
+    font-size: 60px;
     color: aliceblue;
     text-align: center;
     background-color: #212429;
@@ -31,6 +31,18 @@ body {
     border-radius: 5px;
     display: inline-block;
     padding: 10px;
+}
+
+.text-block3 {
+  font-size: 60px;
+    color: aliceblue;
+    text-align: center;
+    background-color: #212429;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    display: none;
 }
 .ms-1 {
     color: aliceblue;
@@ -70,13 +82,19 @@ body {
     padding: 10px;
   }
 
-  .question {
+  .d-grid > .question {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    margin-left: 46%;
+    background-color:#212429;
     color: aliceblue;
-    background-color: #212429;
-     border-radius: 5px;
-  }
+    border-radius: 5px;
 
+  }
+ 
   #answercomment {
     background-color: #212429;
     border-radius: 5px;
+
   }

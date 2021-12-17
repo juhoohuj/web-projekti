@@ -1,4 +1,7 @@
 /* web-projekti*/
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: 'Acme', sans-serif;
 }
@@ -73,6 +76,7 @@ background-size: 100% 100%;
   font-size: 50px;
   display: none;
   color: black;
+
 }
 /* Linkkejen tyylit*/
 a {
@@ -80,7 +84,24 @@ a {
   color: black;
 }
 /*hover toiminnot*/
-#jako:hover .text-block {
+#jako:hover .overlay{
+  display: block;
+  opacity: 1;
+}
+#minus:hover .overlay{
+  display: block;
+  opacity: 1;
+}
+#plus:hover .overlay{
+  display: block;
+  opacity: 1;
+}
+#kerto:hover .overlay{
+  display: block;
+  opacity: 1;
+}
+
+#jako:hover .text-block{
   display: block;
 }
 
@@ -96,4 +117,19 @@ a {
 
 footer > div {
   color: rgb(255, 255, 255);
+}
+
+
+.col-12{
+  padding: 0;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: lightblue;
+  overflow: hidden;
 }

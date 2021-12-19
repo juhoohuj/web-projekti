@@ -27,11 +27,10 @@ body {
   }
 
   #sidebar{
-      width: auto;
+      width: 200px;
       height: 85vh;
   }
   
-
   .container{
     padding-top: 100px;
     text-align: center;
@@ -51,8 +50,16 @@ p span{
   color: aliceblue;
   background-color: #394656;
 }
+#menu{
+  position:absolute;
+}
 
-
+#menu > li > a:hover {
+  position: relative;
+  color: aliceblue;
+  font-size: 110%;
+  transition: all 0.7s;
+}
 
 footer{
   height: 1000px;

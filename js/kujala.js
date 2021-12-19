@@ -16,7 +16,7 @@ document.getElementById('question').innerHTML = int1 + " " + "-" + " " + int2 + 
 var qanswer = int1 - int2;
 
 //newquestion luo uuden laskun ensimmäisen laskun jälkeen
-function newquestion(){
+function newquestion() {
   var int1 = Math.floor(Math.random() * (maximum - minimum + 1)) + 1;
   var int2 = Math.floor(Math.random() * (maximum - minimum + 1)) + 1;
   document.getElementById('question').innerHTML = int1 + " " + "-" + " " + int2 + " ?";
@@ -26,7 +26,7 @@ function newquestion(){
 function calculate() {
   var uanswer = document.getElementById('answer').value;
   //Jos tehtäviä ei ole jäljellä lasku kenttä muutetaan ja näytetään oikeiden vastausten määrä
-  if(counter <= 1){
+  if (counter <= 1) {
     document.getElementById("counter").innerHTML = "Kysymyksiä jäljellä 0/5";
     document.getElementById("question").innerHTML = "Vastasit kaikkiin kysymyksiin";
     document.getElementById("correctanswers").innerHTML = "Sait oikein " + correctanswrs;
@@ -38,8 +38,8 @@ function calculate() {
     document.getElementById("result").style.color = "lawngreen";
     document.getElementById("result").innerHTML = "Oikein!";
   }
-//jos vastaus on väärin tulostetaan teksti jossa sanotaan väärin ja kerrotaan oikea vastaus
-   if(uanswer != qanswer) {
+  //jos vastaus on väärin tulostetaan teksti jossa sanotaan väärin ja kerrotaan oikea vastaus
+  if (uanswer != qanswer) {
     document.getElementById("result").style.color = "firebrick";
     document.getElementById("result").innerHTML = "Väärin! Oikea vastaus oli " + qanswer;
   }
@@ -52,6 +52,6 @@ function calculate() {
 }
 
 //funktio yritä uudestaan napille joka lataa sivun uudestaan
-function reloadpage(){
+function reloadpage() {
   location.reload();
 }

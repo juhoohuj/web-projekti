@@ -1,9 +1,8 @@
 body {
-  max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: 'Acme', sans-serif;
-  background-image: url("../images/tausta.jpg");
+  background-image: url("../images/kujala_tausta.jpg");
 }
   
   .navbar-brand {
@@ -31,11 +30,18 @@ body {
       height: 85vh;
   }
   
-  .container{
-    padding-top: 100px;
-    text-align: center;
+  div[class='col py-3']{
     font-size: 2em;
-  }
+    margin-top: 5%;
+    background-size: cover;
+    text-align: center;
+}
+
+#box{
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+}
 
 H2 span{
   padding-left: 10px;
@@ -50,6 +56,7 @@ p span{
   color: aliceblue;
   background-color: #394656;
 }
+
 #menu{
   position:absolute;
 }

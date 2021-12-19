@@ -1,42 +1,35 @@
-
 body {
-    background-image: url(../images/tausta.jpg);
-    font-family: 'Acme', sans-serif;
+  background-image: url(../images/tausta.jpg);
+  font-family: 'Acme', sans-serif;
 
 }
 
-.d-grid{
-    align-items: center;
+.d-grid {
+  align-items: center;
 }
 
 .ms-1 {
-    color: aliceblue;
-    font-size: 1.5em;
-  }
-  
-  .ms-1:hover {
-    font-size: 2em;
-  }
+  color: aliceblue;
+  font-size: 1.5em;
+}
+.fas{
+  font-size: 1.2em;
+}
 
-  .fs-5 {
-    font-size: 2em !important;
-  }
- 
+#info {
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(37, 52, 77, 0.6);
+  margin-top: 5%;
+  padding: 10px;
+  font-size: 1.5em;
+}
 
-  #info {
-     text-align: center;
-     display: inline-block;
-     background-color:rgb(37, 52, 77, 0.6);
-     margin-top: 5%;
-     padding: 10px;
-     font-size: 1.5em;
-  }
+#info>h4 {
+  font-size: 1.7em;
+  color: aliceblue;
+}
 
-  #info > h4 {
-      font-size: 1.7em;
-      color: aliceblue;
-  }
-
-  #info > p {
-      color: #ffff;
-  }
+#info>p {
+  color: #ffff;
+}

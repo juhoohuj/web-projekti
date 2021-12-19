@@ -8,13 +8,14 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="stylesheet" href="../styles/tietoja.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,400;1,500&family=Sorts+Mill+Goudy&display=swap"
-  rel="stylesheet">
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/tietoja.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,400;1,500&family=Sorts+Mill+Goudy&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cd08e9c581.js" crossorigin="anonymous"></script>
   <title>Web-projekti</title>
 </head>
 
@@ -22,41 +23,37 @@
   <!--Sivupalkki-->
   <div class="container-fluid">
     <div class="row flex-nowrap">
-      <div class="col-1 col-md-1 col-xl-2 px-sm-2 px-0 bg-dark">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-2 bg-dark ">
         <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-          <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-5 d-none d-sm-inline">Valikko</span>
-          </a>
           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
             <li class="nav-item">
               <a href="../index.html" class="nav-link align-middle px-0">
-                <span class="oi oi-home"><span class="ms-1 d-none d-sm-inline">Koti </span></span>
+                <span class="navText ms-1 d-none d-md-inline">Etusivu</span> <i class="d-md-none fas fa-home"></i> </a>
+            </li>
 
+            <li class="nav-item">
+              <a href="#" class="nav-link align-middle px-0">
+                <span class="ms-1 d-none d-md-inline">Tietoja</span> <i class="d-md-none fas fa-info"></i> </a>
+            </li>
+            <li class="nav-item">
+              <a href="sivu_ahonen.html" class="nav-link align-middle px-0">
+                <span class="ms-1 d-none d-md-inline">Pluslaskut</span> <i class="d-md-none fas fa-plus"></i> </a>
+            </li>
+            <li class="nav-item">
+              <a href="sivu_kujala.html" class="nav-link align-middle px-0">
+                <span class="ms-1 d-none d-md-inline">Miinuslaskut</span> <i class="d-md-none fas fa-minus"></i>
               </a>
             </li>
-            <li>
-              <a href="../pages/sivu_ahonen.html" class="nav-link px-0 align-middle">
-                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Yhteenlaskutehtäviä!</span></a>
+            <li class="nav-item">
+              <a href="sivu_louhela.html" class="nav-link align-middle px-0">
+                <span class="ms-1 d-none d-md-inline jakolaskut">Jakolaskut</span> <i
+                  class="d-md-none fas fa-divide"></i> </a>
             </li>
-            <li>
-              <a href="../pages/sivu_kujala.html" class="nav-link px-0 align-middle">
-                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Vähennystehtäviä!</span></a>
+            <li class="nav-item">
+              <a href="sivu_rahikkala.html" class="nav-link align-middle px-0">
+                <span class="ms-1 d-none d-md-inline">Kertolaskut</span> <i class="d-md-none fas fa-times"></i>
+              </a>
             </li>
-            <li>
-              <a href="../pages/sivu_louhela.html" class="nav-link px-0 align-middle">
-                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Jakolaskuja!</span></a>
-            </li>
-            <li>
-              <a href="../pages/sivu_rahikkala.html" class="nav-link px-0 align-middle">
-                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Kertolaskuja!</span></a>
-            </li>
-            <br>
-
-            <li>
-              <a href="../pages/tietoja.html" class="nav-link px-0 align-middle">
-                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Tietoja</span></a>
-            </li>
-
           </ul>
         </div>
 
@@ -70,37 +67,25 @@
               <div class="container-fluid" id="info">
                 <h4>Tekijät ja osa-alueet:</h4>
 
-                  <p> Juho Ahonen: Yhteenlaskut, Kotisivu, Tietoja-sivu <br>
-                    Jussi Kujala: <br>
-                    Nino Rahikkala: Kertolaskusivu, kotisivun kuvat/kuvalinkit, tietoja-sivu <br>
-                    Niko Louhela: Jakolaskut, kotisivun responsiivisuus ja kuvalinkkien hover toiminto<br>
-                  </p>
+                <p> Juho Ahonen: Yhteenlaskut, Kotisivu, Tietoja-sivu <br>
+                  Jussi Kujala: <br>
+                  Nino Rahikkala: Kertolaskusivu, kotisivun kuvat/kuvalinkit, tietoja-sivu <br>
+                  Niko Louhela: Jakolaskut, kotisivun responsiivisuus, kuvalinkkien hovertoiminto ja tietojasivun
+                  responsiivisuus<br>
+                </p>
 
-                  <h4>Kuvien lähteet:</h4>
-                  <p>pixabay.com</p>
+                <h4>Kuvien lähteet:</h4>
+                <p>pixabay.com</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
-
     </div>
-
   </div>
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="../js/rahikkala.js"></script>
-
-</body>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
 </body>
 

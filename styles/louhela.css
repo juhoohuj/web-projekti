@@ -48,6 +48,10 @@ footer>div {
     justify-content: flex-start;
 }
 
+.ms-1{
+    color: aliceblue;
+}
+
 .nav-item {
     margin-top: 20px;
     font-size: 1.2em;
@@ -58,6 +62,7 @@ footer>div {
     min-width: 200px;
     text-align: center;
 }
+
 
 .questionArea{
     padding: 10px 10px 80px 10px;

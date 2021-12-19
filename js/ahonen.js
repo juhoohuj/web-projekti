@@ -1,4 +1,6 @@
+//Juho Ahonen
 
+//Muuttujat ja elementeille kuuntelijat
 let results = new Array;
 let correctAnswers = 0;
 let currentSolution = 0;
@@ -29,7 +31,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-//Returns mathProblem using random number generator and two variables
+//Arpoo luvut ja luo matemaattisen lauseen
 function mathProblem() {
   let int1 = getRandomInt()
   let int2 = getRandomInt()
@@ -39,6 +41,7 @@ function mathProblem() {
   return currentSolution = int1 + int2;
 }
 
+//Tarkistetaan onko vastaus annettu numeroina ja onko se oikein => tulostetaan viesti
 function calculate() {
   let studentsAnswer = Number(document.getElementById("answer").value);
 
@@ -56,6 +59,7 @@ function calculate() {
     answerCheck.innerHTML = "Vastaus on väärin! Oikea vastaus on: " + currentSolution;
   }
 
+  //Progressbarin täyttö
   check.disabled = true;
   howManyDone = howManyDone + 1;
   fillProgress = fillProgress + 20;
@@ -63,6 +67,7 @@ function calculate() {
   progressBar.innerHTML = howManyDone + "/5";
   quizCounter.innerHTML = howManyDone + "/5";
 
+  //Lisätään matemaattinen lause, oikea vastaus ja syötetty vastaus taulukkoon lopullista tulostusta varten
   document.getElementById("answer").readOnly = true;
   let mathQuestion = document.getElementById("mathproblem").innerHTML;
   results.push(counter + ". " + mathQuestion + " = " + currentSolution + ". " + "Vastauksesi : " + studentsAnswer);
@@ -75,6 +80,7 @@ function calculate() {
   }
 }
 
+//Tyhjennystä uuden tehtävän lisäämiksesi
 function nextMathProblem() { 
   answerCheck.classList.remove("red")
   answerCheck.classList.remove("green")
@@ -85,28 +91,44 @@ function nextMathProblem() {
   mathProblem()
 }
 
+
+//Tulostetaan lopulliset vastaukset
 function showResults() {
   document.getElementById("answercontent").classList.add("hidden")
   document.getElementById("answercontent").classList.add("visuallyhidden")
-  document.getElementById("result").classList.add("show")
+  document.getElementById("result").classList.add("showAnimation")
   document.getElementById("results").style.display = "block"
   let resultBox = document.getElementById("resultsbox");
   
   for (let i = 0; i < results.length; i++) {
     setTimeout(() => {
       let li = document.createElement("li");
-      li.classList.add("show")
+      li.classList.add("showAnimation")
       li.innerHTML = results[i];
       resultBox.appendChild(li)
    }, 500 * i)
   }
 
+
+    setTimeout(() => {
+      let refresh = document.getElementById("refresh");
+      refresh.classList.add("showAnimation");
+      refresh.style.visibility = "visible"
+      refresh.addEventListener("click", function () {
+        document.location.reload(true);
+      })
+  
+    }, 2500);
+
+
 }
 
+
+//Testin aloitus
 function startMathQuiz() {
   document.getElementById("buttondiv").classList.add("hidden")
   document.getElementById("buttondiv").classList.add("visuallyhidden")
-  document.getElementById("quizcontent").classList.add("show")
+  document.getElementById("quizcontent").classList.add("showAnimation")
   document.getElementById("quizcontent").style.display = "block"
   
   mathProblem()

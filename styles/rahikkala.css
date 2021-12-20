@@ -1,48 +1,48 @@
 
 body {
-    background-image: url(../images/tausta.jpg);
-    font-family: 'Acme', sans-serif;
+  background-image: url(../images/tausta.jpg);
+  font-family: 'Acme', sans-serif;
 
 }
 
 #kerto {
-    text-align: center;
+  text-align: center;
 }
 
 .d-grid{
-    align-items: center;
+  align-items: center;
 }
 .text-block{
-    font-size: 60px;
-    color: aliceblue;
-    text-align: center;
-    background-color: #212429;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
+  font-size: 60px;
+  color: aliceblue;
+  text-align: center;
+  background-color: #212429;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
 }
 
 .text-block2 {
   font-size: 50px;
   color: aliceblue;
-    text-align: center;
-    background-color: #212429;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 10px;
+  text-align: center;
+  background-color: #212429;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
 }
 
 .text-block3 {
   font-size: 60px;
-    color: aliceblue;
-    text-align: center;
-    background-color: #212429;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    display: none;
+  color: aliceblue;
+  text-align: center;
+  background-color: #212429;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  display: none;
 }
 .ms-1 {
     color: aliceblue;

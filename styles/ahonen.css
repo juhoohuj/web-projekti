@@ -103,33 +103,33 @@ footer {
     background-color: #b1b9c7;
     justify-content: center;
     position: relative;
-    top: 100px;
+    top: 7em;
     border: 2px solid black;
     box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.75);
-  }
+}
   
   #answercontent > h3 {
       padding-top: 40px;
-  }
+}
 
   #answer, #check {
       margin-top: 20px;
-  }
+}
 
   #nextproblem {
     position: relative;
     top: 150px;
-  }
+}
 
   .hidden {
     animation-name: fadeOut;
     animation-duration: 0.5s;
-  }
+}
 
   .visuallyhidden {
       display: none;
       visibility: hidden;
-  }
+}
 
 @keyframes fadeOut  {
     0% {opacity: 1;}
@@ -155,28 +155,26 @@ footer {
     }
 }
 
+.red {
+    color: red;
+}
 
+.green {
+    color: green;
+}
 
-  .red {
-      color: red;
-  }
+#answercheck {
+    margin-top: 20px;
+}
 
-  .green {
-      color: green;
-  }
-
-  #answercheck {
-      margin-top: 20px;
-  }
-
-  #progressbar {
-      display: inline-block;
-      min-width: 150%;
-      max-width: 600px;
-      position: absolute;
-      top: 450px;
-      right: -100px;
-  }
+#progressbar {
+    display: inline-block;
+    min-width: 150%;
+    max-width: 600px;
+    position: absolute;
+    top: 450px;
+    right: -100px;
+}
 
 #counter {
     font-size: 1.2em;
@@ -187,7 +185,7 @@ footer {
 }
 
 
-  @media screen and (max-width: 825px) {
+@media screen and (max-width: 825px) {
     #progressbar {
         display: none;
     }
@@ -197,16 +195,16 @@ footer {
     }
 
     #resultscontent > ul > li {
-        font-size: 1.1em;
-        padding-top: 10px;
+        font-size: 1.0em;
+        padding-top: 7px;
         margin-right: 30px ;
     }
 } 
 
 @media screen and (max-width: 768) {
-    header > button {
-        visibility: visible;
-    }
+header > button {
+    visibility: visible;
+}
 
 } 
 
